@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--============== header ==============-->
+    <header class="absolute top-0 left-0 right-0 bg-transparent">
+        <div class="container w-full">
+            <div class="flex items-center justify-between py-4 md:py-5">
+                <div class="px-4">
+                    <a href="#" class="hidden text-2xl font-bold lg:block">Esa <span
+                            class="text-main">Yoshinta</span>.</a>
+                    <a href="#" class="block text-2xl font-bold lg:hidden">E<span class="text-main">Y</span>.</a>
+                </div>
+                <div class="z-10 order-3 block px-4 lg:hidden">
+                    <button class="hamburger hamburger--3dy" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <button id="modeToggle"
+                    class="order-2 px-3 py-1 text-2xl border-none rounded-full shadow-md outline-none lg:order-3 bg-bgColor text-accent">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <nav id="navMenu"
+                    class="fixed top-0 bottom-0 w-3/4 h-screen transition-all duration-500 ease-in-out shadow-lg -right-full lg:static lg:w-auto bg-bgColor rounded-bl-3xl rounded-tl-3xl lg:rounded-none shadow-slate-700 lg:shadow-none lg:bg-transparent lg:h-auto lg:transition-none">
+                    <ul
+                        class="flex flex-col items-center justify-center w-full h-full space-y-5 lg:flex-row lg:space-y-0 lg:space-x-10">
+                        <li class="group">
+                            <a href="#home"
+                                class="relative text-xl font-semibold capitalize duration-300 md:text-base py-1 text-accent/60 group-hover:text-accent/80 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:ease-linear after:duration-300">
+                                home
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#about"
+                                class="relative text-xl font-semibold capitalize duration-300 md:text-base py-1 text-accent/60 group-hover:text-accent/80 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:ease-linear after:duration-300">
+                                about
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#portfolio"
+                                class="relative text-xl font-semibold capitalize duration-300 md:text-base py-1 text-accent/60 group-hover:text-accent/80 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:ease-linear after:duration-300">
+                                portfolio
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#contact"
+                                class="relative text-xl font-semibold capitalize duration-300 md:text-base py-1 text-accent/60 group-hover:text-accent/80 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:ease-linear after:duration-300">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--============== header ==============-->
+    <main>
+        <!--============== home ==============-->
+        <section id="home" class="py-32">
+            <div class="container w-full px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+                    <div class="w-10/12">
+                        <h1 class="text-3xl italic capitalize font-caveat text-accent/30">hi, everyone i'm</h1>
+                        <h4 class="text-xl font-semibold capitalize text-accent">esa yoshinta</h4>
+                        <h2 class="mb-4 text-5xl font-semibold capitalize">
+                            <span id="element"></span>
+                        </h2>
+                        <p class="mb-10 text-sm text-paragraph md:text-base">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem assumenda neque omnis
+                            minima. Reiciendis veritatis voluptate explicabo animi perferendis nam.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="px-3 py-2 text-lg transition duration-300 border rounded-full md:text-xl md:px-4 md:py-3 border-accent hover:bg-accent text-accent hover:text-bgColor">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="px-4 py-2 text-lg transition duration-300 border rounded-full md:text-xl md:px-5 md:py-3 border-accent hover:bg-accent text-accent hover:text-bgColor">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="px-3 py-2 text-lg transition duration-300 border rounded-full md:text-xl md:px-4 md:py-3 border-accent hover:bg-accent text-accent hover:text-bgColor">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="img/illustration.png" alt="" class="max-w-xs">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============== home ==============-->
+    </main>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- my script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
